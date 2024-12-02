@@ -1,11 +1,10 @@
-# **To-Do List Application**
+## To-Do List Application 
 
 A simple React-based To-Do List app designed to manage tasks efficiently. This application supports adding, deleting, toggling, and filtering tasks. It includes unit, integration, and end-to-end testing to ensure high reliability. An optional Node.js backend can be added for persistent data storage.
 
 ---
-**
 
-## **Features**
+## Features
 
 - Add tasks to the list.
 - Mark tasks as completed/uncompleted.
@@ -24,75 +23,110 @@ A simple React-based To-Do List app designed to manage tasks efficiently. This a
 
 ### **Prerequisites**
 
-- Node.js (v14 or later)
-- npm (v6 or later)
+Before you begin, ensure you have the following installed:
+
+- **Node.js** (v14 or later)
+- **npm** (v6 or later)
 
 ### **Installation**
 
 1. Clone the repository:
 
-   ```
+   ```bash
    git clone <repository-url>
-   cd my-app 
-2. Install dependencies:
+   cd my-app
+   ```
 
-    ```
-    npm install
-3. Run the Application
-Start the React development server:
+2. Install dependencies for the frontend:
 
-    ```
-    npm start
-    ```
+   ```bash
+   npm install
+   ```
 
-4. Open your browser and navigate to [http://localhost:3000]
-5. Testing
-   - Run unit and integration tests:
+3. Run the React Application:
 
-    ```
-    npm test
-    ```
+   ```bash
+   npm start
+   ```
 
-6. Run End-to-End Tests
-    Start the application in development mode:
+   Open your browser and navigate to [http://localhost:3000](http://localhost:3000).
 
-    ```
-    npm start
-    ```
+### **Testing**
 
-Open Cypress for testing:
-    ```
-    npx cypress open
-    ```
-6. Optional Backend
-If you want to use a backend for persistent storage, you can run the provided Node.js server:
+1. **Unit and Integration Tests**:
 
-Navigate to the backend directory:
-    ```
-    cd backend
-    ```
-Install backend dependencies:
-    ```
-    npm install
-    ```
-Start the backend server:
-    ```
-    node server.js
-    ```
-The backend will run on <http://localhost:5000>.
+   Run the unit and integration tests using Jest and React Testing Library:
 
-Technology Stack
-Frontend: React
-Testing: Jest, React Testing Library, Cypress
-Backend (optional): Node.js, Express
+   ```bash
+   npm test
+   ```
 
-License
+2. **End-to-End Tests**:
+
+   Start the React development server (if not already running):
+
+   ```bash
+   npm start
+
+   
+   
+   ```
+
+   Open Cypress for testing:
+
+   ```bash
+   npx cypress open
+   ```
+
+   This will launch the Cypress test runner, where you can select and run the tests.
+
+---
+
+## **Optional Backend Setup**
+
+If you want to use a backend for persistent storage, you can run the provided Node.js server.
+
+1. Navigate to the backend directory:
+
+   ```bash
+   cd backend
+   ```
+
+2. Install backend dependencies:
+
+   ```bash
+   npm install
+   ```
+
+3. Start the backend server:
+
+   ```bash
+   node server.js
+   ```
+
+   The backend will run on [http://localhost:5000](http://localhost:5000).
+
+---
+
+## **Technology Stack**
+
+- **Frontend**: React
+- **Testing**: Jest, React Testing Library, Cypress
+- **Backend (optional)**: Node.js, Express
+
+---
+
+## **License**
+
 This project is open-source and available under the MIT License.
 
-### Key Highlights
+---
+
+## **Key Highlights**
 
 1. **Clean Formatting**: The document is organized into clear sections for setup, usage, and testing.
 2. **Developer-Focused**: Prioritizes ease of installation and understanding.
 3. **Optional Backend**: Provides instructions for an optional backend setup.
 4. **Technologies Listed**: Highlights the tools and frameworks used.
-**
+
+```
