@@ -13,6 +13,7 @@ const TaskForm = ({ onSubmit }) => {
 
 return (
     <form onSubmit={handleSubmit}>
+    <div className="task-form">
       <input
         type="text"
         value={text}
@@ -20,6 +21,7 @@ return (
         placeholder="Enter a task"
       />
       <button type="submit">Add Task</button>
+      </div>
     </form>
   );
 };

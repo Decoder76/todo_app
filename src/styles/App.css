@@ -1,123 +1,172 @@
-body {
-  font-family: Arial, sans-serif;
-  background: #f9f9f9;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh; /* Ensure full viewport height */
-}
-
+/* General App Styling */
 .container {
-  max-width: 600px;
-  width: 90%; /* Adjust width for smaller screens */
+  max-width: 800px;
+  margin: 0 auto;
   padding: 20px;
-  background: white;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  overflow: hidden; /* Prevent overlapping content */
+  font-family: Arial, sans-serif;
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
   text-align: center;
+  font-size: 2.5rem;
   color: #333;
   margin-bottom: 20px;
 }
 
-form {
+/* Task Form Styling */
+.task-form {
   display: flex;
-  gap: 10px; /* Add space between input and button */
+  gap: 10px;
   margin-bottom: 20px;
 }
 
-form input {
+.task-form input {
   flex: 1;
   padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
 }
 
-form button {
-  background: #007bff;
-  color: white;
+.task-form input:focus {
+  outline: none;
+  border-color: #2575fc;
+  box-shadow: 0 0 5px rgba(37, 117, 252, 0.5);
+}
+
+.task-form button {
+  padding: 10px 15px;
+  background: #2575fc;
+  color: #fff;
   border: none;
-  padding: 10px 20px;
-  border-radius: 4px;
+  border-radius: 5px;
+  font-size: 1rem;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
 }
 
-form button:hover {
-  background: #0056b3;
+.task-form button:hover {
+  background: #6a11cb;
+  transform: scale(1.05);
 }
 
-.filters {
-  display: flex;
-  justify-content: center;
-  gap: 10px; /* Ensure even spacing */
-  margin-bottom: 20px;
+.task-form button:active {
+  transform: scale(0.95);
+  background: #204cb5;
 }
 
-.filters button {
-  padding: 8px 15px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  background: #007bff;
-  color: white;
-  transition: background-color 0.3s ease;
-}
-
-.filters button:hover {
-  background: #0056b3;
-}
-
-ul {
+/* Task List Styling */
+.task-list {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-ul li {
+/* Task Item Styling */
+.task-item {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+  gap: 10px;
   padding: 10px;
-  border-bottom: 1px solid #ddd;
-  word-break: break-word; /* Handle long task texts */
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease;
 }
 
-ul li:last-child {
-  border-bottom: none;
+.task-item:hover {
+  background: #f0f0f0;
 }
 
-ul li span {
+.task-item input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.task-item span {
   flex: 1;
-  margin-left: 10px;
+  font-size: 1rem;
+  word-break: break-word;
 }
 
-ul li button {
-  background: #dc3545;
+.task-item.completed span {
+  text-decoration: line-through;
+  color: #757575;
+}
+
+.task-item button {
+  padding: 5px 10px;
+  background: #f44336;
   color: white;
   border: none;
-  padding: 5px 10px;
-  border-radius: 4px;
+  border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background 0.3s ease, transform 0.2s ease;
 }
 
-ul li button:hover {
-  background: #c82333;
+.task-item button:hover {
+  background: #d32f2f;
+  transform: scale(1.05);
 }
 
-@media (max-width: 768px) {
-  /* Responsive styles */
+.task-item button:active {
+  transform: scale(0.95);
+}
+
+/* Filters Styling */
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.filters button {
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background: #f9f9f9;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filters button.active {
+  background: #2575fc;
+  color: white;
+}
+
+.filters button:hover {
+  background: #6a11cb;
+  color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
   .container {
     padding: 15px;
   }
 
-  form button, .filters button {
-    padding: 8px 12px;
+  .task-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+
+  .task-item button {
+    align-self: flex-end;
+  }
+
+  .filters {
+    flex-wrap: wrap;
+    gap: 5px;
   }
 }
