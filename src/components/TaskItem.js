@@ -2,7 +2,7 @@ import React from 'react';
 
 const TaskItem = ({ task, onDelete, onToggle }) => {
   return (
-    <li>
+    <li className="task-item">
       <input 
         type="checkbox" 
         checked={task.completed} 
@@ -11,7 +11,11 @@ const TaskItem = ({ task, onDelete, onToggle }) => {
       
       <span 
         style={{ textDecoration: task.completed ? 'line-through' : 'none' }} 
-        data-testid={`task-${task.id}`}>{task.text}</span>
+        data-testid={`task-${task.id}`}
+      >
+        {task.text}
+      </span>
+      
       <button 
         onClick={() => onDelete(task.id)} 
         data-testid={`delete-btn-${task.id}`}
@@ -21,7 +25,6 @@ const TaskItem = ({ task, onDelete, onToggle }) => {
     </li>
   );
 };
-
 
 export default TaskItem;
 
