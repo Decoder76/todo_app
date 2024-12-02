@@ -1,0 +1,123 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Ensure full viewport height */
+}
+
+.container {
+  max-width: 600px;
+  width: 90%; /* Adjust width for smaller screens */
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden; /* Prevent overlapping content */
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  gap: 10px; /* Add space between input and button */
+  margin-bottom: 20px;
+}
+
+form input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+form button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background: #0056b3;
+}
+
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* Ensure even spacing */
+  margin-bottom: 20px;
+}
+
+.filters button {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background: #007bff;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.filters button:hover {
+  background: #0056b3;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  word-break: break-word; /* Handle long task texts */
+}
+
+ul li:last-child {
+  border-bottom: none;
+}
+
+ul li span {
+  flex: 1;
+  margin-left: 10px;
+}
+
+ul li button {
+  background: #dc3545;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+ul li button:hover {
+  background: #c82333;
+}
+
+@media (max-width: 768px) {
+  /* Responsive styles */
+  .container {
+    padding: 15px;
+  }
+
+  form button, .filters button {
+    padding: 8px 12px;
+  }
+}
