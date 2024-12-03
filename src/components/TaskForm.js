@@ -22,6 +22,7 @@ const TaskForm = ({ onSubmit }) => {
           data-testid="task-input" // Added data-testid here
         />
         <button type="submit" data-testid="add-task-btn">
+          Add Task
         </button>
       </div>
     </form>
