@@ -1,132 +1,97 @@
-## To-Do List Application 
+# 📝 React To-Do Application
 
-A simple React-based To-Do List app designed to manage tasks efficiently. This application supports adding, deleting, toggling, and filtering tasks. It includes unit, integration, and end-to-end testing to ensure high reliability. An optional Node.js backend can be added for persistent data storage.
+![GitHub repo size](https://img.shields.io/github/repo-size/Decoder76/todo_app?color=blue&label=Repo%20Size)
+![GitHub last commit](https://img.shields.io/github/last-commit/Decoder76/todo_app?color=green&label=Last%20Commit)
+![GitHub license](https://img.shields.io/github/license/Decoder76/todo_app?color=yellow&label=License)
 
----
+## 📋 Overview
 
-## Features
+This React-based To-Do Application allows users to efficiently manage their tasks. It supports adding, deleting, toggling completion status, and filtering tasks. The application is thoroughly tested, ensuring high reliability, and includes an optional Node.js backend for persistent data storage.
 
-- Add tasks to the list.
-- Mark tasks as completed/uncompleted.
-- Delete tasks from the list.
-- Filter tasks by:
-  - **All**: Shows all tasks.
-  - **Completed**: Shows only completed tasks.
-  - **Active**: Shows only active tasks.
-- Fully tested:
-  - **Unit and Integration Tests**: Using Jest and React Testing Library.
-  - **End-to-End Tests**: Using Cypress.
+## 🚀 Features
 
----
+- **Add Tasks**: Easily add new tasks to your to-do list.
+- **Mark as Completed**: Toggle tasks between completed and active states.
+- **Delete Tasks**: Remove tasks that are no longer needed.
+- **Filter Tasks**:
+  - *All*: Displays all tasks.
+  - *Completed*: Shows only completed tasks.
+  - *Active*: Shows only active tasks.
+- **Testing**:
+  - *Unit and Integration Tests*: Implemented using Jest and React Testing Library.
+  - *End-to-End Tests*: Conducted with Cypress.
 
-## **Getting Started**
+## 🛠️ Installation
 
-### **Prerequisites**
+### Prerequisites
 
-Before you begin, ensure you have the following installed:
+Ensure you have the following installed:
 
-- **Node.js** (v14 or later)
-- **npm** (v6 or later)
+- **Node.js** (version 14 or later)
+- **npm** (version 6 or later)
 
-### **Installation**
+### Steps
 
-1. Clone the repository:
-
+1. **Clone the Repository**:
    ```bash
-   git clone <repository-url>
-   cd my-app
+   git clone https://github.com/Decoder76/todo_app.git
+   cd todo_app
    ```
 
-2. Install dependencies for the frontend:
-
+2. **Install Dependencies**:
    ```bash
    npm install
    ```
 
-3. Run the React Application:
-
+3. **Start the Application**:
    ```bash
    npm start
    ```
+   The application will run at `http://localhost:3000`.
 
-   Open your browser and navigate to [http://localhost:3000](http://localhost:3000).
+## 🧪 Running Tests
 
-### **Testing**
+### Unit and Integration Tests
 
-1. **Unit and Integration Tests**:
+Execute the following command to run unit and integration tests:
+```bash
+npm test
+```
 
-   Run the unit and integration tests using Jest and React Testing Library:
+### End-to-End Tests
 
-   ```bash
-   npm test
-   ```
+To run end-to-end tests using Cypress:
 
-2. **End-to-End Tests**:
-
-   Start the React development server (if not already running):
-
-   ```bash
-   npm start
-
-   
-   
-   ```
-
-   Open Cypress for testing:
-
+1. **Open Cypress Test Runner**:
    ```bash
    npx cypress open
    ```
 
-   This will launch the Cypress test runner, where you can select and run the tests.
+2. **Run Tests**:
+   In the Cypress Test Runner, select the desired test to execute.
 
----
+## 🗂️ Project Structure
 
-## **Optional Backend Setup**
-
-If you want to use a backend for persistent storage, you can run the provided Node.js server.
-
-1. Navigate to the backend directory:
-
-   ```bash
-   cd backend
-   ```
-
-2. Install backend dependencies:
-
-   ```bash
-   npm install
-   ```
-
-3. Start the backend server:
-
-   ```bash
-   node server.js
-   ```
-
-   The backend will run on [http://localhost:5000](http://localhost:5000).
-
----
-
-## **Technology Stack**
-
-- **Frontend**: React
-- **Testing**: Jest, React Testing Library, Cypress
-- **Backend (optional)**: Node.js, Express
-
----
-
-## **License**
-
-This project is open-source and available under the MIT License.
-
----
-
-## **Key Highlights**
-
-1. **Clean Formatting**: The document is organized into clear sections for setup, usage, and testing.
-2. **Developer-Focused**: Prioritizes ease of installation and understanding.
-3. **Optional Backend**: Provides instructions for an optional backend setup.
-4. **Technologies Listed**: Highlights the tools and frameworks used.
-
+```bash
+todo_app/
+├── backend/               # Optional Node.js backend
+├── cypress/               # End-to-end tests
+├── public/                # Static assets
+├── src/                   # Source code
+│   ├── components/        # React components
+│   ├── App.js             # Main App component
+│   ├── index.js           # Entry point
+│   └── ...                # Other source files
+├── .gitignore             # Git ignore file
+├── cypress.config.js      # Cypress configuration
+├── package.json           # Project dependencies and scripts
+└── README.md              # Project documentation
 ```
+
+## 📄 License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+---
+
+*If you find this project helpful, please consider giving it a ⭐ on GitHub!*
