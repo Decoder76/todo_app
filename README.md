@@ -21,6 +21,35 @@ This React-based To-Do Application allows users to efficiently manage their task
   - *Unit and Integration Tests*: Implemented using Jest and React Testing Library.
   - *End-to-End Tests*: Conducted with Cypress.
 
+## 🛠️ Skills and Tools Required
+
+From a **Rails Developer** perspective, the following skills and tools are necessary to build and integrate this application effectively:
+
+### **Frontend (React.js)**
+- **React.js**: Component-based UI development
+- **Redux / Context API**: State management
+- **React Router**: Navigation handling
+- **Material-UI / Tailwind CSS**: Styling and UI components
+- **Jest & React Testing Library**: Unit and integration testing
+- **Cypress**: End-to-end testing
+
+### **Backend (Ruby on Rails - Optional Integration)**
+- **Rails API**: Creating RESTful API endpoints
+- **Active Record**: Database management
+- **PostgreSQL / MySQL**: Database storage
+- **JWT / Devise**: User authentication and security
+- **RSpec**: Unit testing for backend services
+
+### **DevOps & Deployment**
+- **Docker**: Containerized deployment
+- **Heroku / AWS / Vercel**: Hosting services
+- **CI/CD (GitHub Actions / Jenkins)**: Automated testing and deployment pipelines
+
+### **Version Control & Collaboration**
+- **Git & GitHub**: Version control and collaboration
+- **GitHub Issues & Projects**: Task management
+- **Postman / cURL**: API testing and debugging
+
 ## 🛠️ Installation
 
 ### Prerequisites
@@ -95,3 +124,4 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ---
 
 *If you find this project helpful, please consider giving it a ⭐ on GitHub!*
+
